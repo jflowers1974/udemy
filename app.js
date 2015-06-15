@@ -13,6 +13,6 @@ app.get('/', function(req, res){
 });
 
 
-
-app.listen(3000);
-console.log('Sever listening at 127.0.0.1:3000');
+var port = process.env.PORT || 3000;
+app.listen(port);
+console.log('Sever listening at port: ' + port);
